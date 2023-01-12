@@ -16,11 +16,18 @@ a{
 
 /*****header estilization*****/
 .menu{
+    position: fixed;
+    background-color: white;
     padding: 0 3%;
     display: flex;
     grid-template-rows: repeat(2, auto);
     flex-wrap: wrap;
     height: 7.8rem;
+    transition: transform 1s;
+}
+
+.menu--hidden {
+    transform: translateY(-8rem);
 }
 
 .top-bar-menu{
@@ -183,5 +190,7 @@ a{
     color: #A0E7DB;
  }
  
-
+p {
+    padding-top: 10rem;
+}
  
