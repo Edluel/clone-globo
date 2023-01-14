@@ -20,7 +20,6 @@ a{
     background-color: white;
     padding: 0 3%;
     display: flex;
-    grid-template-rows: repeat(2, auto);
     flex-wrap: wrap;
     height: 7.8rem;
     transition: transform 1s;
@@ -51,16 +50,18 @@ a{
 
 .menu-bt {
     margin-right: 25px;
+    cursor: pointer;
 }
 
 .menu-button__img {
     position: relative;
     top: 3px;
-    cursor: pointer;
+    pointer-events: none;
 }
 
 .menu-bt a{
     margin-left: 10px;
+    pointer-events: none;
 }
 
 .subscribe-bt {
@@ -265,7 +266,207 @@ a{
     transform: translateX(275px);
 }
 
-p {
-    padding-top: 10rem;
+
+
+/**** Highlight section ****/
+.highlight{
+    padding: 0 3%;
+    padding-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
 }
- 
+
+.highlight img:hover {
+    filter: brightness(70%);
+    transition: filter 0.5s;
+}
+
+.top-highlights{
+    margin-top: 30px;
+    border-bottom: 1px solid #EBEDEF;
+    padding-bottom: 10px;
+}
+
+.top-highlights h1{
+    color: #C4170C;
+    font-size: 52px;
+    font-weight: 600;
+    font-family: 'Globotipo Rounded', sans-serif;
+    margin-bottom: 20px;
+}
+.top-highlights h1:hover {
+    color: #F03018;
+    transition: color 1s;
+}
+
+.top-highlights h2{
+    color: #333333;
+    border-left: 4px;
+    font-family: 'Globotipo Texto', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.top-highlights h2::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    border-radius: 40%;
+    background-color: #C4170C;
+    margin-right: 8px;
+}
+
+/* highlight board */
+.highlight-board {
+    max-width: 100%;
+    padding-top: 25px;
+    display: grid;
+    grid-template-rows: repeat(2,1fr) ;
+    grid-template-columns: 1fr 1.2fr 1fr; 
+    row-gap: 80px;
+}
+
+.highlight-board::before {
+    content: "";
+    border-bottom: 1px solid #EBEDEF;
+    width: 94.3%;
+    position: absolute;
+    align-self: center;
+}
+
+.highlight-post {
+    width: 315px;
+
+}
+
+.middle__post {
+    padding-left: 8%;
+}
+
+
+.contain-post__img {
+    overflow: hidden;
+    height: 105px;
+    width: 315px;
+}
+
+.contain-post__img img{
+    object-position: center center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.highlight-post h2{
+    color: #C4170C;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Globotipo Rounded', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.highlight-post h2:hover {
+    color: #F03018;
+    transition: color 1s;
+}
+
+.highlight-post h3{
+    color: #333333;
+    border-left: 4px;
+    font-family: 'Globotipo Texto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.highlight-post h3::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #C4170C;
+    margin-right: 8px;
+}
+
+/*highlight columns*/
+.highlight-column {
+    margin-top: 40px;
+    border-top: 1px solid #EBEDEF;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+}
+
+.highlight-column h2{
+    font-family: 'Globotipo Rounded', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.highlight-column h3 {
+    font-family: 'Globotipo Texto', sans-serif;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.highlight-column h3::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #C4170C;
+    margin-right: 8px;
+}
+
+.highlight-column::before {
+    content: "";
+    border-left: 1px solid #EBEDEF;
+    height: 155%;
+    position: absolute;
+    left: calc(50% - 1px);
+    align-self: center;
+}
+
+.contain-column-img {
+    overflow: hidden;
+    height: 135px;
+    width: 470px;
+    margin-top: 40px;
+}
+
+.contain-column-img img{
+    object-position: center center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.sports-column h2{
+    color: #06AA48;
+    padding-right: 35px;
+}
+.sports-column h2:hover{
+    color: #1FB25A;
+    transition: color 1s;
+}
+.sports-column h3::before {
+    background-color: #06AA48;
+}
+
+.bbb-column {
+    padding-left: 35px;
+}
+
+.bbb-column h2{
+    color: #FF6700;
+}
