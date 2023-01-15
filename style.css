@@ -470,3 +470,134 @@ a{
 .bbb-column h2{
     color: #FF6700;
 }
+
+
+/* BBB section */
+.bbb23 {
+    padding: 60px 3% 0 3%;
+    margin-bottom: 30px;
+}
+
+.bbb-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.bbb-header::after{
+    content: "";
+    border-bottom: 1px solid #EBEDEF;
+    width: 94.3%;
+    position: absolute;
+    align-self: flex-end;
+}
+
+.bbb-header h1 {
+    color: #FF6700;
+    font-family: 'Globotipo Rounded', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    border-bottom: 2px solid #FF6700;
+    padding-bottom: 15px;
+
+}
+
+.bbb-header h2 {
+    color: white;
+    font-family: 'Globotipo Rounded', sans-serif;
+    background-color: #FF6700;
+    font-size: 15px;
+    padding: 9px 20px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.trending-posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.container-t-bbb {
+    width: 100%;
+    height: 160px;
+}
+
+.trending-bbb-post img{
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.trending-bbb-post {
+    width: 23%;
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px #2426721C;
+}
+
+.trending-bbb-post h2 {
+    color: #FF6700;
+    padding: 10% 5% 10% 5%;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 95%;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0031FF;
+    height: 160px;
+}
+
+.g-footer{
+    font-family: 'Globotipo Condensada', sans-serif;
+    padding: 0 3%;
+}
+
+.footer-item {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.f-items {
+    display: flex;
+    align-items: center;
+}
+
+.f-items a{
+    color: white;
+    font-size: 17px;
+    padding: 0 15px;
+    font-family: 'Globotipo Condensada', sans-serif;
+    font-weight: 400;
+    align-items: center;
+
+}
+
+.g-footer img {
+    object-fit: content;
+    width: 30px;
+}
+
+.g-footer p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.copyright {
+    display: flex;
+    padding-top: 55px;
+    align-items: center;
+}
