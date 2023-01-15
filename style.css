@@ -7,6 +7,11 @@
     font-family: 'Globotipo Texto', sans-serif;*/
 }
 
+body {
+    width: 1077px;
+    margin: 0 auto; 
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -601,3 +606,5 @@ a{
     padding-top: 55px;
     align-items: center;
 }
+
+@media  screen and (min-width: 1077px){body{overflow-x: hidden;}}
