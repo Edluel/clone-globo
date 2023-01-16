@@ -28,6 +28,7 @@ a{
     flex-wrap: wrap;
     height: 7.8rem;
     transition: transform 1s;
+    z-index: 1;
 }
 
 .menu--hidden {
