@@ -21,8 +21,8 @@ Try out the live version of the page clone [here](https://poetic-gelato-c4c135.n
 
 Here are some screenshots of the page clone in action:<br>
 <img src="screenshots/side-menu.png" width="50%" height="50%">
-<img src="screenshots/show-header-menu.png" width="50%" height="50%">
 <img src="screenshots/hide-header-menu.png" width="50%" height="50%">
+<img src="screenshots/show-header-menu.png" width="50%" height="50%">
 
 
 ## How to Use
